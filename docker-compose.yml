@@ -1,0 +1,21 @@
+# ref
+# usage of honkit with docker
+# https://github.com/honkit/honkit/tree/master/dockerversion: '3'
+services:
+  honkit:
+    image: honkit-sample:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["honkit", "serve"]
+    init: true
+    ports:
+      - "4000:4000"
+    volumes:
+      - ${PWD}:${PWD}
+    working_dir: "${PWD}"
+    platform: linux/amd64
+
+
+
+

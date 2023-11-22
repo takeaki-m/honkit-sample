@@ -1,0 +1,4 @@
+# include Git version control but exclude from the honkit artifact 
+
+package.json
+package-lock.json

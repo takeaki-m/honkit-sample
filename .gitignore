@@ -1,0 +1,7 @@
+
+node_modules/
+# Output of documenatation
+_book
+
+# mermaid files
+.mermaid*
